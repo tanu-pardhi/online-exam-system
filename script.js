@@ -1,5 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzpvF-Gs89hEzuplvBZZbvAhLNepTGHlPX7aagdedoulk13gD8_v7COS_zo2AahgmYL/exec";
-
+const API_URL = "https://script.google.com/macros/s/AKfycbwNxWHRIv_cAfmKXu4b1bM0ZiRwZyOV2a4_PEeMOY4VRtEVeAJXFO9r8s-NyGA42qmA/exec";
 let studentId="";
 let questions=[];
 let correctAnswers=[];
@@ -83,4 +82,5 @@ function submitExam(){
 
     document.getElementById("resultText").innerHTML=html;
   });
+
 }
