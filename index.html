@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Examination</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader" class="loader">
+  <div class="spinner"></div>
+</div>
+
+<section id="loginSection" class="card active">
+  <h2>Online Examination</h2>
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="email" id="email" placeholder="Enter Email">
+
+  <select id="language">
+    <option value="C">C</option>
+    <option value="CPP">C++</option>
+    <option value="Python">Python</option>
+  </select>
+
+  <button onclick="registerStudent()">Start Exam</button>
+</section>
+
+<section id="examSection" class="card">
+  <div class="exam-header">
+    <h3 id="studentInfo"></h3>
+    <div id="timer">60s</div>
+  </div>
+  <div id="questionBox"></div>
+  <button onclick="submitExam()">Submit</button>
+</section>
+
+<section id="resultSection" class="card">
+  <h2>Result</h2>
+  <div id="resultText"></div>
+  <button onclick="location.reload()">Restart</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
